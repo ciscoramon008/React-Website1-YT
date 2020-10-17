@@ -8,7 +8,7 @@ const Navbar = ({ setIsSidebarOpen }) => {
     <>
       <Nav>
         <NavContainer>
-          <NavLogo to='/'>Rupay</NavLogo>
+          <NavLogo to='/'>Company</NavLogo>
           <MobileIcon onClick={() => setIsSidebarOpen(true)}><FaBars color='white' size='2rem' /></MobileIcon>
             <NavMenu>
               <NavItem>

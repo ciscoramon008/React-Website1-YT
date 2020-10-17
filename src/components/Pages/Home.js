@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import HeroComp from '../HeroComponent/HeroComp';
 import Navbar from '../Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
 
@@ -9,6 +10,7 @@ const Home = () => {
     <>
       <Navbar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
       <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
+      <HeroComp />
     </>
   )
 }
