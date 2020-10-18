@@ -1,12 +1,12 @@
 import React from 'react'
-// import Video from '../../videos/video.mp4'
+import Video from '../../videos/video.mp4'
 import { HeroBg, HeroContainer, VideoBg, HeroContent, HeroH1, 
   HeroP, HeroBtnWrapper, Button } from './HeroElements'
 
 const HeroComp = () => {
   return (
     <HeroContainer>
-      {/* <HeroBg><VideoBg autoPlay loop muted src={Video} type='video/mp4' /></HeroBg> */}
+      <HeroBg><VideoBg autoPlay loop muted src={Video} type='video/mp4' /></HeroBg>
       <HeroContent>
         <HeroH1>Just Some Text To Show</HeroH1>
         <HeroP>
