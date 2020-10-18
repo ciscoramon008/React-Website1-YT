@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Video from '../../videos/video.mp4'
 import { HeroBg, HeroContainer, VideoBg, HeroContent, HeroH1, 
-  HeroP, HeroBtnWrapper, Button } from './HeroElements'
+  HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements'
+import { Button } from '../ButtonElement'
 
 const HeroComp = () => {
+  const [onHover, setOnHover] = useState(false);
+
+  const toggleHover = () => setOnHover(!onHover)
+
   return (
     <HeroContainer>
       <HeroBg><VideoBg autoPlay loop muted src={Video} type='video/mp4' /></HeroBg>
@@ -14,8 +19,8 @@ const HeroComp = () => {
           I love React.
           I love how powerful React is and I probably wanna do this for a living.
         </HeroP>
-        <HeroBtnWrapper>
-          <Button to='signup'>Get Started</Button>
+        <HeroBtnWrapper onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
+          <Button primary dark to='signup'>Get Started {onHover ? <ArrowForward /> : <ArrowRight />}</Button>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
