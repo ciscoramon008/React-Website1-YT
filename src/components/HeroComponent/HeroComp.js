@@ -19,8 +19,10 @@ const HeroComp = () => {
           I love React.
           I love how powerful React is and I probably wanna do this for a living.
         </HeroP>
-        <HeroBtnWrapper onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
-          <Button primary dark to='signup'>Get Started {onHover ? <ArrowForward /> : <ArrowRight />}</Button>
+        <HeroBtnWrapper>
+          <Button primary dark to='signup' onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
+            Get Started {onHover ? <ArrowForward /> : <ArrowRight />}
+          </Button>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>

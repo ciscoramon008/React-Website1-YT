@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md'
 
 export const HeroContainer = styled.div`
