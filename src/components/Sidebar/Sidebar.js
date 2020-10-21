@@ -4,21 +4,21 @@ import { SidebarContainer, Icon, CloseIcon, SidebarMenu, SidebarItem, SidebarLin
 const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   return (
     <SidebarContainer isOpen={isSidebarOpen} onClick={() => setIsSidebarOpen(false)}>
-      <Icon>
+      <Icon onClick={() => setIsSidebarOpen(false)}>
         <CloseIcon />
       </Icon>
       <SidebarMenu>
         <SidebarItem>
-          <SidebarLink to='about'>About</SidebarLink>
+          <SidebarLink to='about' onClick={() => setIsSidebarOpen(false)}>About</SidebarLink>
         </SidebarItem>
         <SidebarItem>
-          <SidebarLink to='discover'>Discover</SidebarLink>
+          <SidebarLink to='discover' onClick={() => setIsSidebarOpen(false)}>Discover</SidebarLink>
         </SidebarItem>
         <SidebarItem>
-          <SidebarLink to='services'>Services</SidebarLink>
+          <SidebarLink to='services' onClick={() => setIsSidebarOpen(false)}>Services</SidebarLink>
         </SidebarItem>
         <SidebarItem>
-          <SidebarLink to='signup'>Sign Up</SidebarLink>
+          <SidebarLink to='signup' onClick={() => setIsSidebarOpen(false)}>Sign Up</SidebarLink>
         </SidebarItem>
       </SidebarMenu>
     </SidebarContainer>

@@ -5,7 +5,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import Info from '../Info/Info'
 import { Section1, Section2, Section3, Section4 } from '../Info/Data';
 import Services from '../Services/Services';
-
+import Footer from '../Footer/Footer';
 
 const Home = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -20,6 +20,7 @@ const Home = () => {
       <Services />
       <Info {...Section3} />
       <Info {...Section4} />
+      <Footer />
     </>
   )
 }
